@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
-import { Search } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 
 const fetchTopStories = async () => {
   const response = await fetch("https://hacker-news.firebaseio.com/v0/topstories.json");
@@ -39,7 +39,7 @@ function Index() {
           className="w-full max-w-md"
         />
         <Button variant="outline" className="ml-2">
-          <Search />
+          <FaSearch />
         </Button>
       </div>
       {isLoading ? (
