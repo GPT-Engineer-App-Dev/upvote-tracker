@@ -16,7 +16,6 @@ function App() {
         <Toaster />
           <Router>
             <Routes>
-              <Route path="/login" element={<Login />} />
               <Route path="/" element={<SharedLayout />}>
                 <Route index element={<Index />} />
                 {/* Add more routes here as needed */}
